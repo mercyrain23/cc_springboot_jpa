@@ -13,4 +13,10 @@ public class Address {
 
     protected Address() { // JPA Spec 상 만든 것. new 로 생성하면 안됨
     }
+
+    public Address(String city, String street, String zipcode) {
+        this.city = city;
+        this.street = street;
+        this.zipcode = zipcode;
+    }
 }
